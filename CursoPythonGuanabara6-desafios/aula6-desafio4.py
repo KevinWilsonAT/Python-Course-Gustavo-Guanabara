@@ -1,0 +1,12 @@
+a = input('Insert something: ')
+
+print('Primitve Type: {}'.format(type(a)))
+print('Has only spaces? {}'.format(a.isspace()))
+print('Is it a number? {}'.format(a.isnumeric()))
+print('Is it alphabetical? {}'.format(a.isalpha()))
+print('Is it alphanumerical? {}'.format(a.isalnum()))
+print('Is it uppercase? {}'.format(a.isupper()))
+print('Is it lowercase? {}'.format(a.islower()))
+print('Is it capitalized? {}'.format(a.istitle()))
+print('Is it decimal? {}'.format(a.isdecimal()))
+print('Is it a digit? {}'.format(a.isdigit()))
