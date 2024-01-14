@@ -1,5 +1,4 @@
 from random import randint
-
 chosen = randint(0, 5)
 
 user = int(input('Insert a number: '))
