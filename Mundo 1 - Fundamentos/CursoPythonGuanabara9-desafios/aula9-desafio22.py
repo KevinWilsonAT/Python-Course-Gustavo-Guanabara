@@ -2,6 +2,7 @@ name = str(input("Insert your full name: ")).strip()
 splitter = name.split()
 
 print('Analyzing...')
+x = 'curso de python no cursoemvideo'
 
 print('Uppercase is: {}'.format(name.upper()))
 print('Lowercase is: {}'.format(name.lower()))
