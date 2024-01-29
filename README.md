@@ -1,4 +1,4 @@
-## Projetos e Exercícios de Programação em Pyhton
+## Projetos e Exercícios de Programação em Python
 
 <div>
     <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python Logo" min-width="300px" max-width="300px" width="300px" align="right">
