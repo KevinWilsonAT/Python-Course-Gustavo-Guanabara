@@ -2,7 +2,7 @@ from random import randint
 from time import sleep
 
 you = int(input('Rock (0), Paper (1) or Scissors (2)? '))
-cpu_chosen = randint(0, 2)
+cpu = randint(0, 2)
 
 print('-='*20)
 print('Jo...')
@@ -12,7 +12,7 @@ sleep(1)
 print('Po...')
 print('-='*20)
 sleep(1)
-if cpu_chosen == 0:
+if cpu == 0:
     if you == 0:
         print('It is a draw!!!     YOU: ''\u270A''     CPU: ''\u270A')
     elif you == 1:
@@ -22,7 +22,7 @@ if cpu_chosen == 0:
     else:
         print('Invalid Command!')
 
-elif cpu_chosen == 1:
+elif cpu == 1:
     if you == 0:
         print('You Lose!!!     YOU: ''\u270A''     CPU: ''\u270B')
     elif you == 1:
@@ -31,7 +31,7 @@ elif cpu_chosen == 1:
         print('You Win!!!     YOU: ''\u270C''     CPU: ''\u270B')
     else:
         print('Invalid Command!')
-elif cpu_chosen == 2:
+elif cpu == 2:
     if you == 0:
         print('You Win!!!     YOU: ''\u270A''     CPU: ''\u270C')
     elif you == 1:
