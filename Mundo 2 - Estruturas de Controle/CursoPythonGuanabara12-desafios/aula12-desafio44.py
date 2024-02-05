@@ -5,13 +5,16 @@ pay_option = int(input('''Payment option
 '''))
 
 if pay_option == 1:
-    print('You will pay the product with 10% discount. The price will be R${:.2f}.'.format((prod_price * 0.9)))
+    print('You will pay the product with 10% discount. The price will be from R${:.2f} to R${:.2f}.'
+          .format(prod_price, (prod_price * 0.9)))
 elif pay_option == 2:
     installments = float(input('In how many installments do you want to pay? '))
-
-    if installments <= 2:
+    if installments == 1:
+        print('You will pay the product with 5% discount. The price will be from R${:.2f} to R${:.2f}.'
+              .format(prod_price, (prod_price * 0.95)))
+    elif installments == 2:
         print('The price of your product will be in {:.0f} installments of R${:.2f}.'
-              .format(installments, (prod_price / installments)))
+              .format(installments, (prod_price / 2)))
     elif installments >= 3:
         total = prod_price + (prod_price * 0.2)
         print('The product price will cost R${:.2f} and will be in {:.0f} installments of R${:.2f}, with a fee of 20%.'
