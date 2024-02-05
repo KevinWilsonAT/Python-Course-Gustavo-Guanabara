@@ -11,7 +11,7 @@ print('Ken...')
 sleep(1)
 print('Po...')
 print('-='*20)
-
+sleep(1)
 if cpu_chosen == 0:
     if you == 0:
         print('It is a draw!!!     YOU: ''\u270A''     CPU: ''\u270A')
