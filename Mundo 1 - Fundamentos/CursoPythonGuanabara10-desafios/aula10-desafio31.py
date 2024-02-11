@@ -1,15 +1,15 @@
-# perguntar a distancia de uma viagem em km
+# ask the distance of a trip in km
 
 dist = int(input("Trip distance: "))
 price = 0
 tax = 0
 
-# r$ 0,50 para viagens ate 200km
+# R$0,50 to trips until 200km
 
 if dist <= 200:
     tax = 0.5
     price = dist * tax
-# r$0,45 para viagens > 200km
+# R$0,45 to trips > 200km
 else:
     tax = 0.45
     price = dist * tax

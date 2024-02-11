@@ -1,7 +1,7 @@
-nome = str(input('Qual seu nome? '))
+name = str(input("Whats your name? "))
 
-if nome == 'Kevin':
-    print('Que nome lindo vc tem!')
+if name == 'Kevin':
+    print('What a beautiful name you have!')
 else:
-    print('Sou nome é tão normal')
-print('Bom dia, {}'.format(nome))
+    print('Your name is so common')
+print('Good morning, {}'.format(name))

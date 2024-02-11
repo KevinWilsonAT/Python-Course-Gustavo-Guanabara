@@ -1,4 +1,4 @@
-pr = float(input('preço do produto: R$'))
+pr = float(input('Product price: R$'))
 pr_desc = pr - (pr * 5/100)
 
-print('O valor do produto de R${:.2f} com 5% de desconto: R${:.2f}'.format(pr, pr_desc))
+print('The value of the product is R${:.2f}, with 5% discount it will be: R${:.2f}'.format(pr, pr_desc))

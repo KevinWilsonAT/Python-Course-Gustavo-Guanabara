@@ -1,4 +1,4 @@
-n = int(input('digite um numero: '))
+n = int(input('Insert a number: '))
 
 print('-'*12)
 print('{} x {:2} = {}'.format(n, 0, n*0))

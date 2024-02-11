@@ -9,7 +9,7 @@ colors = {
     'mm': '\033[0;37m',
 }
 
-m = float(input('Digite o valor em metros: '))
+m = float(input('Insert a value (in meters): '))
 km = m/1000
 hm = m/100
 dam = m/10
@@ -17,8 +17,8 @@ dm = int(m*10)
 cm = int(m*100)
 mm = int(m*1000)
 
-print('o valor de {}{}m{} equivale a {}{}km{}, {}{}hm{}, {}{}dam{},'
+print('{}{}m{} is equivalent to {}{}km{}, {}{}hm{}, {}{}dam{},'
       .format(colors['m'], m, colors['clean'], colors['km'], km, colors['clean'], colors['hm'], hm, colors['clean'],
               colors['dam'], dam, colors['clean']))
-print('{}{}dm{}, {}{}cm{} e {}{}mm{}'
+print('{}{}dm{}, {}{}cm{} and {}{}mm{}'
       .format(colors['dm'], dm, colors['clean'], colors['cm'], cm, colors['clean'], colors['mm'], mm, colors['clean']))

@@ -1,15 +1,15 @@
-# Metodo tradicional
-tempo = int(input('Quantos anos tem seu carro? '))
+# Traditional Method
+time = int(input('How old is your car? '))
 
-if tempo <= 3:
-    print('Carro novo')
+if time <= 3:
+    print('New Car')
 else:
-    print('Carro velho')
-print('--FIM--')
+    print('Old Car')
+print('--END--')
 
-# Metodo simplificado
+# Simplified Method
 
-tempo = int(input('Quantos anos tem seu carro? '))
+time = int(input('How old is your car? '))
 
-print('Carro novo' if tempo <= 3 else 'Carro velho')
-print('--FIM--')
+print('New Car' if time <= 3 else 'Old Car')
+print('--END--')

@@ -1,9 +1,9 @@
-n1 = float(input('Digite a primeira nota: '))
-n2 = float(input('Digite a segunda nota: '))
-m = (n1 + n2) / 2
+r1 = float(input('Insert the 1st rank: '))
+r2 = float(input('Insert the 2nd rank: '))
+avg = (r1 + r2) / 2
 
-print('A sua média  foi: {:.1f}'.format(m))
-if m >= 6.0:
-    print('Acima da média, parabéns!')
+print('Your average is: {:.1f}'.format(m))
+if avg >= 6.0:
+    print('Above the average, congratulations!')
 else:
-    print('Abaixo da média, se esforce mais!')
+    print('Below the average, put more effort into it!')

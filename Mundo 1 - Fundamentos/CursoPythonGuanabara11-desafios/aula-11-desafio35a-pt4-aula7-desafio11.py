@@ -1,18 +1,18 @@
 colors = {
     'clean': '\033[m',
-    'alt': '\033[0;31m',
-    'larg': '\033[0;32m',
+    'height': '\033[0;31m',
+    'width': '\033[0;32m',
     'area': '\033[0;33m',
-    'tinta': '\033[0;34m'
+    'ink': '\033[0;34m'
 }
 
-alt = float(input('Altura da parede em metros: '))
-larg = float(input('Largura da parede em metros: '))
-area = alt * larg
-tinta = area/2
+height = float(input("Wall's height (in meters): "))
+width = float(input("Wall's width(in meters): "))
+area = height * width
+ink = area/2
 
-print('Sua parede tem a dimensão de {}{}{} x {}{}{}, sua area é de {}{}{}m² '
-      .format(colors['alt'], alt, colors['clean'], colors['larg'], larg, colors['clean'],
+print('Your wall has {}{}{} x {}{}{} in dimension, its area is {}{}{}m² '
+      .format(colors['height'], height, colors['clean'], colors['width'], width, colors['clean'],
               colors['area'], area, colors['clean']))
 
-print('Para pintar a parede, você precisa de {}{}{}l de tinta'.format(colors['tinta'], tinta, colors['clean']))
+print('To paint the wall, you will need {}{}{}l of ink'.format(colors['ink'], ink, colors['clean']))
