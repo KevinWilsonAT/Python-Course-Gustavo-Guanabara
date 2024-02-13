@@ -4,5 +4,5 @@
 # can be omitted (in case the <iteration_number> equals 1)
 
 for i in range(1, 6):
-    print("Oi")
-print("FIM")
+    print("Hi")
+print("END")
