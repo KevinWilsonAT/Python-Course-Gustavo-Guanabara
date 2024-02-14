@@ -7,10 +7,11 @@ guesses = 0
 user = int(input('Insert a number: '))
 
 while user != chosen:
-    print('Too bad! Try Again')
     guesses += 1
-    user = int(input('Insert a number: '))
-
+    if user < chosen:
+        user = int(input('More, insert a number: '))
+    if user > chosen:
+        user = int(input('Less, insert a number: '))
 
 print('Processing...')
 sleep(0.5)

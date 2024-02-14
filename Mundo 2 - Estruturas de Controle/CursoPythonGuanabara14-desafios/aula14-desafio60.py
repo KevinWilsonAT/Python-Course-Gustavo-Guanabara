@@ -1,12 +1,15 @@
+from time import sleep
+
 vl = int(input("Value to calculate: "))
 count = vl
 fact = 1
 
-print("Calculating factorial of {}".format(vl))
+print("Calculating {}!".format(vl))
+sleep(1)
+while count > 0:
+    fact = fact * count
+    print('{}'.format(count), end='')
+    print(' x ' if count > 1 else ' = ', end='')
+    count -= 1
 
-if (vl != 0) or (vl > 1):
-    while count >= 1:
-        fact = fact * count
-        count -= 1
-
-print("{}! = {}".format(vl, fact))
+print("{}".format(fact))
