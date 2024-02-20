@@ -11,3 +11,7 @@
 </h2>
 
 ![PyCharm](https://img.shields.io/badge/PyCharm-000000.svg?&style=for-the-badge&logo=PyCharm&logoColor=white)
+
+### Linguagens do repositório:
+
+<img alt="Static Badge" src="https://img.shields.io/badge/--_?style=for-the-badge&label=Python&labelColor=%233572A5&color=%2300000000">
