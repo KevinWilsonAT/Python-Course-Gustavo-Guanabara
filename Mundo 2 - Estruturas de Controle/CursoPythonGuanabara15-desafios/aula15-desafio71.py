@@ -1,29 +1,30 @@
-prod_name = cheapest_name = ''
-option = 'Y'
-prod_number = 1
-prod_price = prod_total = morethousand = cheapest_price = 0
+value = int(input('How much do you want to withdraw? R$'))
+total = value
+money_note = 200
+total_m_n = 0
 
 while True:
-    print(f'Product {prod_number}:')
-    prod_name = str(input('Insert product name: ')).strip()
-    prod_price = float(input('Insert price: '))
-    prod_total += prod_price
-    print('-' * 15)
-
-    if prod_number == 1:
-        cheapest_name = prod_name
-        cheapest_price = prod_price
-    if prod_price < cheapest_price:
-        cheapest_name = prod_name
-        cheapest_price = prod_price
-    if prod_price > 1000:
-        morethousand += 1
-
-    option = str(input('Do you want to continue [Y/N]? '))
-    if option not in 'Yy':
-        break
-    prod_number += 1
-
-print(f'The total is R${prod_total}.')
-print(f'There is {morethousand} products above R$1000,00.')
-print(f'The cheapest product name is {cheapest_name} and costs R$ {cheapest_price}')
+    if total >= money_note:
+        total -= money_note
+        total_m_n += 1
+    else:
+        if total_m_n > 0:
+            print(f'You will withdraw {total_m_n} notes of R${money_note:.2f}')
+        if money_note == 200:
+            money_note = 100
+        elif money_note == 100:
+            money_note = 50
+        if money_note == 50:
+            money_note = 20
+        elif money_note == 20:
+            money_note = 10
+        elif money_note == 10:
+            money_note = 5
+        elif money_note == 5:
+            money_note = 2
+        elif money_note == 2:
+            money_note = 1
+        total_m_n = 0
+        if total == 0:
+            break
+print('PROCESS ENDED')
