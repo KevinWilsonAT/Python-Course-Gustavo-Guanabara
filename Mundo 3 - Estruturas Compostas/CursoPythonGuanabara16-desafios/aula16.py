@@ -35,6 +35,11 @@
 #   About attributions:
 #       TUPLES ARE IMMUTABLE (cannot be attributed a value to any content of the tuple, except in the declaration)
 
+#   To show values and indexes from a tuple together, use:
+#       <tuple_name> = (<content1>, <content2>, ..., <contentN>)
+#
+#       for <index_variable_name>, <content_variable_name> in enumerate(<tuple_name>):
+#           print({<index_variable_name>}{<content_variable_name>}
+
 # To delete tuples, use:
 #       del(<tuple_name>)
-
