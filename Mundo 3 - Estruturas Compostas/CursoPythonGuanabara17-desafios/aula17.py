@@ -3,7 +3,7 @@
 #   syntax:
 #       <list_name> = [<content1>, <content2>, ..., <contentN>]
 #   To access, use:
-#       print(<tuple_name>[<content_position>])
+#       print(<list_name>[<content_position>])
 
 #   To add items in the LAST POSITION of the list, use:
 #       <list_name>.append(<item>)
