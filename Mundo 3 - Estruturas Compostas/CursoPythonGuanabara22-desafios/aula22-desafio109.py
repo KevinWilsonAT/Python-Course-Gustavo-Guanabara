@@ -1,3 +1,9 @@
-# modifique as funcoes que foram criadas no desafio 107 para que elas aceitemum parametro a mais,
-# informando se o valor retornado por elas vai ser ou nao formatado pela funcao money(),
-# desenvolvida no desafio 108
+# MAIN PROGRAM
+
+import coin_desafio109_module as coin
+
+p = float(input('Insert the price: R$'))
+print(f'The half of the value {coin.coin(p)} is: {coin.half(p, True)}')
+print(f'The double of the value {coin.coin(p)} is: {coin.double(p, True)}')
+print(f'Augmenting 10% to the value {coin.coin(p)}, we have: {coin.augm(p, 10, True)}')
+print(f'Reducing 10% of the value {coin.coin(p)}, we have: {coin.red(p, 10, True)}')
