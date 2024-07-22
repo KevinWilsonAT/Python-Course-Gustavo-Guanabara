@@ -1,3 +1,6 @@
-# Adicione ao modulo coin.py criado nos desafios anteriores, uma funcao chamada summary(),
-# que mostre na tela algumas informacoes geradas pelas funcoes que ja temos no modulo
-# criado ate aqui
+# MAIN PROGRAM
+
+import coin_desafio110_module as coin
+
+p = float(input('Insert the price: R$'))
+coin.stats(p)
