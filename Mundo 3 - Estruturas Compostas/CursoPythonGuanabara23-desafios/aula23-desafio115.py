@@ -1,4 +1,20 @@
-# crie um pequeno sistema modularizado que permita cadastrar pessoas pelo seu nome e idade em um arquivo de
-# texto simples
+from ex115.lib.interface import *
+from time import sleep
+from os import system
 
-# o sistema só vai ter 2 opcoes: cadastrar uma nova pessoa e listar todas as pessoas cadastradas
+while True:
+    header('PROGRAM STARTED')
+    response = menu(['Display Users','Register Users','End Program'])
+    if response == 1:
+        print('option 1 selected')
+    elif response == 2:
+        print('option 2 selected')
+    elif response == 3:
+        print('Quitting system...')
+        break
+    else:
+        print('\033[0;31mERROR! Insert a valid option.\033[m')
+        sleep(3)
+        system('cls')
+
+ending('PROGRAM ENDED')
