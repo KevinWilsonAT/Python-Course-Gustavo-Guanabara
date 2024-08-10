@@ -29,7 +29,6 @@ def menu(list):
         print(f'\033[0;33m{c}\033[m - \033[0;34m{item}\033[m')
         c+=1
     print(line())
-    opt = readInt('Your Option: ')
 
 
 def ending(text):
